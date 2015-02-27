@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fighting Game</title>
+    <link href="fightingGameCSS.css" type="text/css" rel="stylesheet"/>
+
+  </head>
+  <body>
+
+   <section class="button">Fight!</section>
+
+    <div>
+
+      <section id="Ryu" class="character">
+        <img class="picture" src="http://img3.wikia.nocookie.net/__cb20100718231721/streetfighter/images/c/cb/Ryu-hdstance.gif"/>
+      </section>
+
+      <section id="vsLogo" class="character">
+        <img class="picture" src="http://ih2.redbubble.net/image.14910379.8227/sticker,375x360.u1.png"/>
+      </section>
+
+      <section id="Ken" class="character">
+        <img class="picture" src="http://img1.wikia.nocookie.net/__cb20100718231338/streetfighter/images/4/44/Ken-hdstance.gif"/>
+      </section>
+
+      <p>Open the Console to see the fight in real time!!!</p>
+
+      <script src="fightingGame.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+          $("#Ken").toggleClass("flipped");
+          $('.button').on("click", function(){
+           $("#vsLogo").hide();
+           $("#"+ loser).html('<section id="knockOut" class="character"> <img class= "picture" src ="http://i295.photobucket.com/albums/mm154/DahJezus/sf4KO.png"/></section>').toggleClass("flipped");
+
+        });
+      </script>
+    </div>
+  </body>
+</html>
